@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-200;
+  @apply bg-zinc-100;
 }

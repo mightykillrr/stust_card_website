@@ -11,66 +11,77 @@
       </p>
     </div>
     <BaseButton type="primary">Get Started</BaseButton>
-    <div class="flex gap-12 justify-center">
+    <div
+      class="flex gap-12 justify-center transition-opacity duration-100 ease-linear"
+      id="image-holder"
+    >
       <img
-        :src="require(locationFront)"
-        alt="Card Front"
-        class="w-3/12 drop-shadow-xl"
+        :src="cardFront"
+        alt="Card Preview Display"
+        class="w-3/12 drop-shadow-xl hover:scale-110 transition-scale duration-100 ease-linear"
       />
-      <img :src="locationBack" alt="Card Back" class="w-3/12 drop-shadow-xl" />
+      <img
+        :src="cardBack"
+        alt="Card Preview Display"
+        class="w-3/12 drop-shadow-xl hover:scale-110 transition-scale duration-100 ease-linear"
+      />
     </div>
     <div class="flex gap-2">
-      <button
-        class="flex flex-col items-center w-16 gap-1 hover:scale-105 transition-all duration-75 ease-linear"
+      <VarietyButton
+        v-for="(color, i) in cardColours"
+        :key="i"
+        :color="color.color"
         @click="changeSelection"
-      >
-        <div
-          class="w-10 h-10 border-4 border-white bg-cardRed rounded-full activeBtn"
-          id="btn-variant"
-        />
-        <span id="btn-variant-text" class="text-llgray activeText">Red</span>
-      </button>
-      <button
-        class="flex flex-col items-center w-16 gap-1 hover:scale-105 transition-all duration-75 ease-linear"
-        @click="changeSelection"
-      >
-        <div
-          class="w-10 h-10 border-4 border-white bg-cardAqua rounded-full"
-          id="btn-variant"
-        />
-        <span id="btn-variant-text" class="text-llgray">Aqua</span>
-      </button>
-      <button
-        class="flex flex-col items-center w-16 gap-1 hover:scale-105 transition-all duration-75 ease-linear"
-        @click="changeSelection"
-      >
-        <div
-          class="w-10 h-10 border-4 border-white bg-cardYellow rounded-full"
-          id="btn-variant"
-        />
-        <span id="btn-variant-text" class="text-llgray">Yellow</span>
-      </button>
+      />
     </div>
   </div>
 </template>
 
 <script>
+import VarietyButton from "../ui/VarietyButton.vue";
+
 export default {
+  components: { VarietyButton },
   data() {
     return {
       currentColor: "Red",
+      cardColours: [
+        {
+          color: "Red",
+          imageFrontURL: this.getImage("Red"),
+          imageBackURL: this.getImage("Red", true),
+        },
+        {
+          color: "Aqua",
+          imageFrontURL: this.getImage("Aqua"),
+          imageBackURL: this.getImage("Aqua", true),
+        },
+        {
+          color: "Yellow",
+          imageFrontURL: this.getImage("Yellow"),
+          imageBackURL: this.getImage("Yellow", true),
+        },
+      ],
     };
   },
   computed: {
-    locationFront() {
-      return `../../assets/card_images/Card${this.currentColor}.svg`;
+    cardFront() {
+      return this.cardColours.find((c) => c.color === this.currentColor)
+        .imageFrontURL;
     },
-    locationBack() {
-      return `../../assets/card_images/Card${this.currentColor}Back.svg`;
+    cardBack() {
+      return this.cardColours.find((c) => c.color === this.currentColor)
+        .imageBackURL;
     },
   },
   methods: {
-    changeCurrentCard(color) {},
+    getImage(color, getBack) {
+      return new URL(
+        `../assets/card_images/Card${color}${getBack ? "Back" : ""}.svg`,
+        import.meta.url
+      ).href;
+    },
+
     changeSelection(e) {
       document.querySelectorAll("#btn-variant").forEach((button) => {
         button.classList.remove("activeBtn");
@@ -84,17 +95,9 @@ export default {
 
       div.classList.add("activeBtn");
       span.classList.add("activeText");
+
+      this.currentColor = span.textContent;
     },
   },
 };
 </script>
-
-<style scoped>
-.activeBtn {
-  @apply drop-shadow-xl;
-}
-
-.activeText {
-  @apply text-gray;
-}
-</style>
