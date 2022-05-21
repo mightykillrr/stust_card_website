@@ -2,8 +2,8 @@
   <div class="max-w-screen-xxl mx-auto px-4">
     <TheNavBar />
     <MainPage />
-    <TheFooter />
   </div>
+  <TheFooter />
 </template>
 
 <script>

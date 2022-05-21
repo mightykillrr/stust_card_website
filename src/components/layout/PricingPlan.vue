@@ -10,8 +10,8 @@
       </p>
     </div>
     <div class="flex bg-white p-0.5">
-      <button class="py-3 px-6 bg-primary">Monthly</button>
-      <button class="py-3 px-6">Annually</button>
+      <button @click="toggleButtons" :class="toggleMonthly">Monthly</button>
+      <button @click="toggleButtons" :class="toggleYearly">Annually</button>
     </div>
     <div class="flex gap-7">
       <PricingCard
@@ -19,10 +19,10 @@
         :key="i"
         :title="item.title"
         :desc="item.desc"
-        :price="item.price"
-        :yearlyPrice="item.yearlyPrice"
+        :price="isMonthly ? item.price : item.yearlyPrice"
         :advantages="item.advantages"
         :type="item.type"
+        ref="pricingcard"
       />
     </div>
   </div>
@@ -34,6 +34,7 @@ import PricingCard from "../ui/PricingCard.vue";
 export default {
   data() {
     return {
+      isMonthly: true,
       pricingChart: [
         {
           title: "Economy",
@@ -75,10 +76,28 @@ export default {
             "Limited edition",
             "Be our priority",
           ],
-          type: "primary",
+          type: "normal",
         },
       ],
     };
+  },
+  computed: {
+    toggleMonthly() {
+      if (this.isMonthly)
+        return "py-3 px-6 transition-all ease-linear duration-75 bg-primary";
+      else return "py-3 px-6 transition-all ease-linear duration-75";
+    },
+    toggleYearly() {
+      if (!this.isMonthly)
+        return "py-3 px-6 transition-all ease-linear duration-75 bg-primary";
+      else return "py-3 px-6 transition-all ease-linear duration-75";
+    },
+  },
+  methods: {
+    toggleButtons() {
+      this.isMonthly = !this.isMonthly;
+      this.$refs.pricingcard.forEach((card) => card.toggleMonth());
+    },
   },
   components: { PricingCard },
 };

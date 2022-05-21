@@ -14,6 +14,9 @@ module.exports = {
         cardYellow: "#D3FE57",
         cardAqua: "#50DBB4",
       },
+      boxShadow: {
+        borderShadow: "0 0 0 1px #000000",
+      },
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
