@@ -44,8 +44,13 @@ export default {
   components: { VarietyButton },
   data() {
     return {
-      currentColor: "Red",
+      currentColor: "Purple",
       cardColours: [
+        {
+          color: "Purple",
+          imageFrontURL: this.getImage("Purple"),
+          imageBackURL: this.getImage("Purple", true),
+        },
         {
           color: "Red",
           imageFrontURL: this.getImage("Red"),
@@ -81,22 +86,28 @@ export default {
         import.meta.url
       ).href;
     },
-
     changeSelection(e) {
-      document.querySelectorAll("#btn-variant").forEach((button) => {
+      const [div, span] = e.currentTarget.children;
+
+      if (span.textContent === this.currentColor) return;
+
+      const imageHolder = document.querySelector("#image-holder");
+      imageHolder.style.opacity = 0;
+
+      document.querySelectorAll(".bbtn").forEach((button) => {
         button.classList.remove("activeBtn");
       });
-
-      document.querySelectorAll("#btn-variant-text").forEach((text) => {
+      document.querySelectorAll(".bbtn-text").forEach((text) => {
         text.classList.remove("activeText");
       });
-
-      const [div, span] = e.currentTarget.children;
 
       div.classList.add("activeBtn");
       span.classList.add("activeText");
 
-      this.currentColor = span.textContent;
+      setTimeout(() => {
+        this.currentColor = span.textContent;
+        imageHolder.style.opacity = 100;
+      }, 300);
     },
   },
 };

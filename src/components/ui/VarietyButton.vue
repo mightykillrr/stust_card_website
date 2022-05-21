@@ -4,7 +4,7 @@
   >
     <div :class="btnBackgroundClass" />
     <span
-      class="text-llgray font-medium transition-all duration-100 ease-linear"
+      class="bbtn-text text-llgray font-medium transition-all duration-100 ease-linear"
       >{{ color }}</span
     >
   </button>
@@ -15,7 +15,14 @@ export default {
   props: ["color"],
   computed: {
     btnBackgroundClass() {
-      return `w-10 h-10 border-4 border-white bg-card${this.color} rounded-full`;
+      if (this.color === "Purple")
+        return "bbtn w-10 h-10 border-4 border-white rounded-full bg-cardPurple";
+      else if (this.color === "Aqua")
+        return "bbtn w-10 h-10 border-4 border-white rounded-full bg-cardAqua";
+      else if (this.color === "Red")
+        return "bbtn w-10 h-10 border-4 border-white rounded-full bg-cardRed";
+      else
+        return "bbtn w-10 h-10 border-4 border-white rounded-full bg-cardYellow";
     },
   },
 };

@@ -8,6 +8,8 @@ module.exports = {
         llgray: "#aeafb1",
         primary: "#dcb1ff",
         dblue: "#0d1218",
+        cardPurple: "#dcb1ff",
+        darkPurple: "#e7c8ff",
         cardRed: "#ff6666",
         cardYellow: "#D3FE57",
         cardAqua: "#50DBB4",
