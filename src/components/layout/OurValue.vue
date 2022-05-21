@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-center justify-center my-32 gap-24">
+  <div
+    class="flex items-center justify-center my-24 py-12 gap-24 bg-white rounded-lg"
+  >
     <img :src="getImage" class="w-4/12" alt="Card layers" />
     <div class="flex flex-col gap-6 w-5/12">
       <span class="tracking-widest font-medium">OUR VALUE</span>

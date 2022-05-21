@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-5 bg-dblue py-32 px-40 text-5xl leading-normal font-light text-white"
+    class="flex flex-col gap-5 rounded-lg bg-dblue py-32 px-40 text-5xl leading-normal font-light text-white"
   >
     <span class="">
       If you're in the luckiest one per cent of humanity, you owe it to the
