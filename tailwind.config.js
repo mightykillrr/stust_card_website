@@ -1,3 +1,18 @@
+const generateColorClass = (variable) => {
+  return ({ opacityValue }) =>
+    opacityValue
+      ? `rgba(var(--${variable}), ${opacityValue})`
+      : `rgb(var(--${variable}))`;
+};
+
+const textColor = {
+  primary: generateColorClass("text-primary"),
+};
+
+const backgroundColor = {
+  primary: generateColorClass("bg-primary"),
+};
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -6,14 +21,15 @@ module.exports = {
         gray: "#222222",
         lgray: "#333333",
         llgray: "#aeafb1",
-        primary: "#dcb1ff",
         dblue: "#0d1218",
-        cardPurple: "#dcb1ff",
         darkPurple: "#e7c8ff",
+        cardPurple: "#dcb1ff",
         cardRed: "#ff6666",
         cardYellow: "#D3FE57",
         cardAqua: "#50DBB4",
       },
+      textColor,
+      backgroundColor,
       boxShadow: {
         borderShadow: "0 0 0 1px #000000",
       },

@@ -2,11 +2,11 @@
   <div class="flex flex-col items-center my-16 text-center gap-8">
     <span class="tracking-widest font-medium">PRICING PLAN</span>
     <div class="flex flex-col items-center gap-5">
-      <h2 class="text-5xl text-center">Choose our best offer</h2>
-      <p class="text-gray w-6/12">
-        When you work on something that only has the capacity to make you 5
-        dollars, it does not matter how much harder you work - the most you will
-        make is 5 dollars.
+      <h2 class="text-5xl text-center">Choose the best for you</h2>
+      <p class="text-gray w-7/12">
+        We've got the best price for you, our valuable customer. Choose from our
+        handpicked selection of subscriptions, which fits your pocket and
+        satisfies your needs perfectly.
       </p>
     </div>
     <div class="flex bg-white p-0.5">
@@ -37,44 +37,48 @@ export default {
       isMonthly: true,
       pricingChart: [
         {
-          title: "Economy",
-          desc: "For those of you who are poor, you must choose this package",
-          price: "$12",
-          yearlyPrice: "$9",
+          title: "Starter",
+          desc: "Just starting a new business? Get our smaller plan to try!",
+          price: "$49.99",
+          yearlyPrice: "$34.99",
           advantages: [
-            "Simplicity",
-            "Easy to use",
-            "Premium quality design",
-            "For lower middle",
+            "Minimalistic",
+            "We pick the designs",
+            "1K Card Orders",
+            "Premium Quality Design",
           ],
           type: "normal",
         },
         {
           title: "Exclusive",
-          desc: "This package is for you, the uppser middle class, but it's still better",
-          price: "$25",
-          yearlyPrice: "$18",
+          desc: "Perfection, including everything at a sweet price, most-bought package!",
+          price: "$99.99",
+          yearlyPrice: "$69.69",
           advantages: [
-            "Simplicity",
-            "Easy to use",
-            "Premium quality design",
-            "For upper middle",
-            "Limited edition",
+            "Minimalistic",
+            "You choose the designs",
+            "50K Card Orders",
+            "Over 100K+ designs to pick from",
+            "EMV Chip with ServoProtect©",
+            "Premium Quality Design",
           ],
           type: "exclusive",
         },
         {
-          title: "Priority",
-          desc: "If you are rich, choose this package, because this package is special",
-          price: "$75",
-          yearlyPrice: "$53",
+          title: "Premium",
+          desc: "Love our service? We provide cards in bulk for our lovers!",
+          price: "$179.99",
+          yearlyPrice: "$99.99",
           advantages: [
-            "Simplicity",
-            "Easy to use",
-            "Premium quality design",
-            "For crazy rich",
-            "Limited edition",
-            "Be our priority",
+            "Minimalistic",
+            "You choose the designs",
+            "150K Card Orders",
+            "Over 100K+ designs to pick from",
+            "EMV Chip with ServoProtect©",
+            "No delivery fee",
+            "Priority customer care",
+            "Personalised designs accepted",
+            "Premium Quality Design",
           ],
           type: "normal",
         },

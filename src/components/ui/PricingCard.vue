@@ -7,7 +7,7 @@
         >{{ price
         }}<span v-if="showMonthly" class="text-sm"> /month</span></span
       >
-      <hr class="w-full text-slate-400" />
+      <hr class="w-full text-black" />
       <div class="flex flex-col gap-4">
         <div class="flex gap-3" v-for="(text, i) in advantages" :key="i">
           <svg
@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <BaseButton :type="buttonType">Get Started</BaseButton>
+    <BaseButton :type="buttonType">Count me in!</BaseButton>
   </div>
 </template>
 

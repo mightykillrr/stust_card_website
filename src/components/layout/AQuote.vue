@@ -3,14 +3,17 @@
     class="flex flex-col gap-5 rounded-lg bg-dblue py-32 px-40 text-5xl leading-normal font-light text-white"
   >
     <span class="">
-      If you're in the luckiest one per cent of humanity, you owe it to the
-      <span class="text-llgray"
-        >rest of humanity to think about the other 99 per cent.</span
-      >
+      "Among all boring, classic traditional debit cards, @stust were the best.
+      Partnering with stust was
+      <span class="text-llgray">the <u>best</u> choice ever!</span>
     </span>
-    <div class="flex items-center">
+    <div class="flex items-center gap-5">
       <hr class="w-12" />
-      <span class="text-xl">&nbsp; Sam Raimi</span>
+      <div class="flex flex-col">
+        <span class="text-xl">Nicolle R. Johnston</span>
+        <span class="text-sm text-llgray">Owner, DMTB Bank</span>
+      </div>
     </div>
   </div>
+  <a id="pricing" />
 </template>

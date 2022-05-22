@@ -4,6 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --bg-primary: 220, 177, 255;
+    --text-primary: 220, 177, 255;
+  }
+
+  .aqua {
+    --bg-primary: 80, 219, 180;
+    --text-primary: 80, 219, 180;
+  }
+
+  .red {
+    --bg-primary: 255, 102, 102;
+    --text-primary: 255, 102, 102;
+  }
+
+  .yellow {
+    --bg-primary: 211, 254, 87;
+    --text-primary: 211, 254, 87;
+  }
+
+  .aqua {
+    --bg-primary: 80, 219, 180;
+    --text-primary: 80, 219, 180;
+  }
+}
+
 body {
   @apply bg-zinc-100;
 }

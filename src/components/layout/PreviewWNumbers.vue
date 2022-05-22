@@ -4,17 +4,17 @@
       <img
         src="../assets/card_images/CardAqua.svg"
         alt="Card Preview Image"
-        class="w-2/12 -translate-y-24 transition-all ease-linear duration-100 hover:scale-110"
+        class="w-2/12 -translate-y-12 transition-all ease-linear duration-100 hover:scale-110"
       />
       <img
         src="../assets/card_images/CardRed.svg"
         alt="Card Preview Image"
-        class="w-2/12 -translate-y-40 transition-all ease-linear duration-100 hover:scale-110"
+        class="w-2/12 -translate-y-24 transition-all ease-linear duration-100 hover:scale-110"
       />
       <img
         src="../assets/card_images/CardYellow.svg"
         alt="Card Preview Image"
-        class="w-2/12 -translate-y-56 transition-all ease-linear duration-100 hover:scale-110"
+        class="w-2/12 -translate-y-32 transition-all ease-linear duration-100 hover:scale-110"
       />
     </div>
     <div>
@@ -32,10 +32,11 @@
           <span class="text-llgray">Reviews</span>
         </li>
         <li class="flex flex-col items-center gap-3">
-          <span class="text-5xl">+89</span>
+          <span class="text-5xl">89+</span>
           <span class="text-llgray">Partners</span>
         </li>
       </ul>
     </div>
   </div>
+  <a id="features" />
 </template>
