@@ -4,10 +4,12 @@
   <VarientDisplay />
   <AQuote />
   <PricingPlan />
+  <GetStartedForm />
 </template>
 
 <script>
 import AQuote from "../layout/AQuote.vue";
+import GetStartedForm from "../layout/GetStartedForm.vue";
 import PreviewWNumbers from "../layout/PreviewWNumbers.vue";
 import PricingPlan from "../layout/PricingPlan.vue";
 import TheHero from "../layout/TheHero.vue";
@@ -20,6 +22,7 @@ export default {
     VarientDisplay,
     AQuote,
     PricingPlan,
+    GetStartedForm,
   },
 };
 </script>

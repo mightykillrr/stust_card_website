@@ -64,9 +64,9 @@ export default {
           imageBackURL: this.getImage("Aqua", true),
         },
         {
-          color: "Yellow",
-          imageFrontURL: this.getImage("Yellow"),
-          imageBackURL: this.getImage("Yellow", true),
+          color: "Lime",
+          imageFrontURL: this.getImage("Lime"),
+          imageBackURL: this.getImage("Lime", true),
         },
       ],
     };
@@ -114,7 +114,7 @@ export default {
         imageHolder.style.opacity = 100;
       }, 300);
 
-      ["aqua", "red", "yellow", "aqua"].forEach((color) => {
+      ["aqua", "red", "lime", "aqua"].forEach((color) => {
         document.documentElement.classList.remove(color);
       });
 

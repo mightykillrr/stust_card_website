@@ -71,7 +71,7 @@ export default {
   methods: {
     getColor() {
       const clss = [...document.documentElement.classList].slice(-1)[0];
-      if (["yellow", "red", "aqua", "purple"].includes(clss))
+      if (["lime", "red", "aqua", "purple"].includes(clss))
         return `${clss[0].toUpperCase()}${clss.slice(1)}`;
       else return "Purple";
     },

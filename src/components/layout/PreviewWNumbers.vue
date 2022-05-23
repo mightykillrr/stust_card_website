@@ -1,4 +1,5 @@
 <template>
+  <a class="-translate-y-16" id="aboutus" />
   <div class="bg-dblue flex flex-col gap-16 pb-32 rounded-lg">
     <div class="flex gap-5 justify-center">
       <img
@@ -12,7 +13,7 @@
         class="w-2/12 -translate-y-24 transition-all ease-linear duration-100 hover:scale-110"
       />
       <img
-        src="../assets/card_images/CardYellow.svg"
+        src="../assets/card_images/CardLime.svg"
         alt="Card Preview Image"
         class="w-2/12 -translate-y-32 transition-all ease-linear duration-100 hover:scale-110"
       />

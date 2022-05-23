@@ -14,6 +14,6 @@
         <span class="text-sm text-llgray">Owner, DMTB Bank</span>
       </div>
     </div>
+    <a id="pricing" />
   </div>
-  <a id="pricing" />
 </template>

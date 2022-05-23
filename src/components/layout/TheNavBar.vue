@@ -1,11 +1,22 @@
 <template>
-  <nav class="flex justify-between py-9 text-gray items-center">
-    <h3 class="font-logo font-semibold text-4xl">stust</h3>
+  <a id="home"></a>
+  <nav
+    class="flex justify-between my-2 py-4 px-3 opacity-90 text-gray items-center sticky top-0 bg-zinc-100 backdrop-blur-lg z-30"
+  >
+    <a href="#home" class="font-logo font-semibold text-4xl">stust</a>
     <ul class="flex gap-12 items-center">
-      <li class="hover:border-b-2 border-lgray"><a href="#">About us</a></li>
-      <li class="hover:border-b-2 border-lgray"><a href="#">Features</a></li>
-      <li class="hover:border-b-2 border-lgray"><a href="#">Pricing</a></li>
-      <li class="hover:border-b-2 border-lgray"><a href="#">Contact us</a></li>
+      <li class="hover:border-b-2 border-lgray">
+        <a href="#aboutus">About us</a>
+      </li>
+      <li class="hover:border-b-2 border-lgray">
+        <a href="#features">Features</a>
+      </li>
+      <li class="hover:border-b-2 border-lgray">
+        <a href="#pricing">Pricing</a>
+      </li>
+      <li class="hover:border-b-2 border-lgray">
+        <a href="#contactus">Contact us</a>
+      </li>
       <li>
         <BaseButton type="flat">Get Started</BaseButton>
       </li>

@@ -6,5 +6,4 @@
     </h1>
     <BaseButton type="normal">Get Started For Free</BaseButton>
   </div>
-  <a id="aboutus" />
 </template>

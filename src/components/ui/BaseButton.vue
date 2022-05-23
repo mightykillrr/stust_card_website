@@ -1,12 +1,12 @@
 <template>
-  <button :class="computedClass">
+  <a :href="link || '#'" :class="computedClass">
     <slot></slot>
-  </button>
+  </a>
 </template>
 
 <script>
 export default {
-  props: ["type"],
+  props: ["type", "link"],
   computed: {
     computedClass() {
       if (this.type === "flat") {
