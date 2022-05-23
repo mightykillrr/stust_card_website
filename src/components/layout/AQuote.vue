@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-5 rounded-lg bg-dblue py-32 px-40 text-5xl leading-normal font-light text-white"
+    class="flex flex-col gap-5 rounded-lg bg-dblue py-32 px-40 text-5xl leading-normal font-light text-white xl:px-28"
   >
     <span class="">
       "Among all boring, classic traditional debit cards, @stust were the best.

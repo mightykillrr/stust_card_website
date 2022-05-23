@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-xxl mx-auto px-4">
+  <div class="max-w-screen-xxl mx-auto px-10">
     <TheNavBar />
     <MainPage />
   </div>
