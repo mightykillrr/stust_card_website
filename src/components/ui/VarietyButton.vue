@@ -4,7 +4,7 @@
   >
     <div :class="btnBackgroundClass" />
     <span
-      class="bbtn-text text-llgray font-medium transition-all duration-100 ease-linear"
+      class="bbtn-text text-sm text-llgray font-medium transition-all duration-100 ease-linear md:text-base lg:text-lg"
       >{{ color }}</span
     >
   </button>

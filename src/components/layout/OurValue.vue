@@ -1,14 +1,12 @@
 <template>
   <div
-    class="sm:flex-col sm:p-7 sm:gap-12 sm:my-12 sm:py-10 flex items-center bg-white rounded-lg"
+    class="flex flex-col p-5 gap-12 my-8 py-10 items-center bg-white rounded-lg md:flex-row md:p-10 lgp:p-16"
   >
-    <img :src="getImage" class="sm:w-5/6" alt="Card layers" />
-    <div class="sm:gap-5 flex flex-col gap-6">
+    <img :src="getImage" class="w-5/6 lgp:w-3/6" alt="Card layers" />
+    <div class="gap-5 flex flex-col md:w-11/12">
       <span class="tracking-widest font-medium">QUALITY</span>
-      <h2 class="sm:text-4xl text-5xl bp2:text-4xl">
-        Why should you choose our card?
-      </h2>
-      <p class="text-lgray">
+      <h2 class="text-3xl lgp:text-5xl">Why should you choose our card?</h2>
+      <p class="text-lgray lgp:text-lg">
         We treat our business, very seriously, so you could relax and focus on
         what's important to you while we handle the rest. We leave no space for
         dust to settle.
@@ -28,7 +26,7 @@
             d="M5 13l4 4L19 7"
           />
         </svg>
-        <span class="sm:text-lg text-xl bp2:text-lg">Minimalistic</span>
+        <span class="text-base lgp:text-lg">Minimalistic</span>
       </div>
       <div class="flex gap-5 items-center">
         <svg
@@ -45,7 +43,7 @@
             d="M5 13l4 4L19 7"
           />
         </svg>
-        <span class="sm:text-lg text-xl bp2:text-lg">Clean and Unique</span>
+        <span class="text-base lgp:text-lg">Clean and Unique</span>
       </div>
       <div class="flex gap-5 items-center">
         <svg
@@ -62,9 +60,7 @@
             d="M5 13l4 4L19 7"
           />
         </svg>
-        <span class="sm:text-lg text-xl bp2:text-lg"
-          >Premium Design Quality</span
-        >
+        <span class="text-base lgp:text-lg">Premium Design Quality</span>
       </div>
     </div>
   </div>

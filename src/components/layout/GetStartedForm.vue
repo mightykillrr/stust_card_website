@@ -2,19 +2,21 @@
   <Transition name="fade">
     <div
       v-if="!isSubmitted"
-      class="sm:grid-cols-1 sm:py-10 bg-dblue my-5 text-white p-10 py-16 grid grid-cols-2 gap-7 items-center rounded-lg bp1:py-10"
+      class="grid-cols-1 bg-dblue my-5 text-white p-8 grid gap-10 items-center lgp:grid-cols-2 xl:p-12"
     >
       <div class="flex flex-col gap-4">
-        <h1 class="text-3xl font-medium">Have a query?</h1>
-        <p class="">
+        <h1 class="text-3xl font-medium lgp:text-4xl">Have a query?</h1>
+        <p class="text-sm md:text-base lgp:text-lg">
           Still not satisfied? Do you have something to share with us? Fill the
           form below and you'll hear from our representatives <u>very</u> soon.
         </p>
       </div>
       <form v-if="true" action="" class="flex flex-col gap-6">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div class="flex flex-col gap-2">
-            <label for="company-name">Company Name</label>
+            <label class="text-xs md:text-sm lgp:text-base" for="company-name"
+              >Company Name</label
+            >
             <input
               @input="checkValidity"
               type="text"
@@ -25,7 +27,9 @@
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label for="your-name">Your Name</label>
+            <label class="text-xs md:text-sm lgp:text-base" for="your-name"
+              >Your Name</label
+            >
             <input
               @input="checkValidity"
               type="text"
@@ -36,7 +40,9 @@
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label for="email">Email Address</label>
+            <label class="text-xs md:text-sm lgp:text-base" for="email"
+              >Email Address</label
+            >
             <input
               @input="checkValidity"
               type="email"
@@ -47,7 +53,9 @@
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label for="phone">Phone Number</label>
+            <label class="text-xs md:text-sm lgp:text-base" for="phone"
+              >Phone Number</label
+            >
             <input
               @input="checkValidity"
               type="text"
@@ -59,7 +67,9 @@
           </div>
         </div>
         <div class="flex flex-col gap-2">
-          <label for="message">Your message</label>
+          <label class="text-xs md:text-sm lgp:text-base" for="message"
+            >Your message</label
+          >
           <textarea
             @input="checkValidity"
             class="p-2 text-black"

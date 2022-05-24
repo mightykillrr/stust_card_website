@@ -1,7 +1,7 @@
 <template>
   <a id="home"></a>
   <nav
-    class="flex justify-between my-2 py-4 px-3 opacity-90 text-gray items-center sticky top-0 bg-zinc-100 backdrop-blur-lg z-30"
+    class="flex justify-between my-2 py-4 px-3 opacity-90 backdrop-blur-md text-gray items-center sticky top-0 bg-zinc-100 z-30"
   >
     <a href="#home" class="font-logo font-semibold text-4xl">stust</a>
     <!-- <ul class="flex gap-12 items-center">

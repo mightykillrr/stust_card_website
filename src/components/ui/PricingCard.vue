@@ -50,9 +50,9 @@ export default {
   computed: {
     mainDiv() {
       if (this.type === "normal")
-        return "sm:p-6 flex flex-col gap-12 justify-between p-9 bg-white bp1:p-7";
+        return "p-5 flex flex-col gap-12 justify-between bg-white md:w-9/12 lg:w-full xl:p-8";
       else
-        return "sm:p-6 flex flex-col gap-12 justify-between p-9 bg-primary bp1:p-7";
+        return "p-5 flex flex-col gap-12 justify-between bg-primary md:w-9/12 lg:w-full xl:p-8";
     },
     checkmarkColor() {
       if (this.type === "normal") return "h-6 w-6 text-primary";

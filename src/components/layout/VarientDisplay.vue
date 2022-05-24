@@ -1,17 +1,19 @@
 <template>
-  <div class="sm:my-16 flex flex-col items-center my-32 gap-12">
-    <div class="flex flex-col items-center text-center gap-5 bp1:w-1/2">
+  <div class="my-16 px-3 flex flex-col items-center gap-8 md:gap-12 lgp:gap-16">
+    <div
+      class="flex flex-col items-center text-center gap-2 md:gap-4 md:mx-10 xxl:gap-7"
+    >
       <span class="tracking-widest font-medium">VARIANTS</span>
-      <h2 class="text-5xl text-center">
+      <h2 class="text-3xl text-center md:text-4xl lgp:text-5xl">
         Select the color<br />variant you love
       </h2>
-      <p class="text-gray">
+      <p class="text-gray lg:mx-24 lgp:text-lg lgp:mx-48 lgp:text-xl">
         Be <u>unique</u> with our huge colour palette, far far away from those
         plain traditional cards, for you to choose from.
       </p>
     </div>
     <div
-      class="sm:gap-5 sm:mx-4 grid grid-cols-2 gap-12 justify-center transition-opacity duration-100 ease-linear"
+      class="gap-5 grid grid-cols-2 md:w-9/12 justify-center transition-opacity duration-100 ease-linear lg:w-7/12 lgp:gap-10 lgp:w-6/12"
       id="image-holder"
     >
       <img

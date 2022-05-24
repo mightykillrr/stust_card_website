@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:px-4 max-w-screen-xxl mx-auto px-10 bp1:px-16">
+  <div class="px-4 max-w-screen-xxl mx-auto lgp:px-12 xl:px-10">
     <TheNavBar />
     <MainPage />
   </div>
