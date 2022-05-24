@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center my-32 gap-12">
-    <div class="flex flex-col items-center w-2/6 text-center gap-5">
+  <div class="sm:my-16 flex flex-col items-center my-32 gap-12">
+    <div class="flex flex-col items-center text-center gap-5 bp1:w-1/2">
       <span class="tracking-widest font-medium">VARIANTS</span>
       <h2 class="text-5xl text-center">
         Select the color<br />variant you love
@@ -11,18 +11,18 @@
       </p>
     </div>
     <div
-      class="flex gap-12 justify-center transition-opacity duration-100 ease-linear"
+      class="sm:gap-5 sm:mx-4 grid grid-cols-2 gap-12 justify-center transition-opacity duration-100 ease-linear"
       id="image-holder"
     >
       <img
         :src="cardFront"
         alt="Card Preview Display"
-        class="w-3/12 drop-shadow-xl hover:scale-110 transition-scale duration-100 ease-linear"
+        class="drop-shadow-xl hover:scale-110 transition-scale duration-100 ease-linear"
       />
       <img
         :src="cardBack"
         alt="Card Preview Display"
-        class="w-3/12 drop-shadow-xl hover:scale-110 transition-scale duration-100 ease-linear"
+        class="drop-shadow-xl hover:scale-110 transition-scale duration-100 ease-linear"
       />
     </div>
     <div id="options-holder" class="flex gap-2">

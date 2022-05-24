@@ -24,7 +24,7 @@
               d="M5 13l4 4L19 7"
             />
           </svg>
-          <span>{{ text }}</span>
+          <span class="text-left">{{ text }}</span>
         </div>
       </div>
     </div>
@@ -50,8 +50,9 @@ export default {
   computed: {
     mainDiv() {
       if (this.type === "normal")
-        return "flex flex-col gap-12 justify-between p-9 w-96 bg-white";
-      else return "flex flex-col gap-12 justify-between p-9 w-96 bg-primary";
+        return "sm:p-6 flex flex-col gap-12 justify-between p-9 bg-white bp1:p-7";
+      else
+        return "sm:p-6 flex flex-col gap-12 justify-between p-9 bg-primary bp1:p-7";
     },
     checkmarkColor() {
       if (this.type === "normal") return "h-6 w-6 text-primary";

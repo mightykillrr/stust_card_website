@@ -2,9 +2,9 @@
   <Transition name="fade">
     <div
       v-if="!isSubmitted"
-      class="bg-dblue my-5 text-white p-10 py-16 flex gap-4 items-center rounded-lg"
+      class="sm:grid-cols-1 sm:py-10 bg-dblue my-5 text-white p-10 py-16 grid grid-cols-2 gap-7 items-center rounded-lg bp1:py-10"
     >
-      <div class="flex flex-col gap-4 w-7/12">
+      <div class="flex flex-col gap-4">
         <h1 class="text-3xl font-medium">Have a query?</h1>
         <p class="">
           Still not satisfied? Do you have something to share with us? Fill the
@@ -12,7 +12,7 @@
         </p>
       </div>
       <form v-if="true" action="" class="flex flex-col gap-6">
-        <div class="flex gap-5">
+        <div class="grid grid-cols-2 gap-4">
           <div class="flex flex-col gap-2">
             <label for="company-name">Company Name</label>
             <input
@@ -35,8 +35,6 @@
               v-model="form.yourName"
             />
           </div>
-        </div>
-        <div class="flex gap-5">
           <div class="flex flex-col gap-2">
             <label for="email">Email Address</label>
             <input

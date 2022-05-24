@@ -1,9 +1,11 @@
 <template>
-  <div class="flex flex-col items-center my-16 text-center gap-8">
+  <div
+    class="sm:gap-5 sm:px-2 sm:items flex flex-col items-center my-16 text-center gap-8"
+  >
     <span class="tracking-widest font-medium">PRICING PLAN</span>
-    <div class="flex flex-col items-center gap-5">
-      <h2 class="text-5xl text-center">Choose the best for you</h2>
-      <p class="text-gray w-7/12">
+    <div class="sm:gap-3 flex flex-col items-center gap-5">
+      <h2 class="sm:text-4xl text-5xl text-center">Choose the best for you</h2>
+      <p class="text-gray xl:mx-72">
         We've got the best price for you, our valuable customer. Choose from our
         handpicked selection of subscriptions, which fits your pocket and
         satisfies your needs perfectly.
@@ -13,7 +15,7 @@
       <button @click="toggleButtons" :class="toggleMonthly">Monthly</button>
       <button @click="toggleButtons" :class="toggleYearly">Annually</button>
     </div>
-    <div class="flex gap-7">
+    <div class="sm:grid-cols-1 grid grid-cols-3 gap-7 bp1:gap-3">
       <PricingCard
         v-for="(item, i) in pricingChart"
         :key="i"

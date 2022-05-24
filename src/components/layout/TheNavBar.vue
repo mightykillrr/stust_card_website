@@ -4,7 +4,7 @@
     class="flex justify-between my-2 py-4 px-3 opacity-90 text-gray items-center sticky top-0 bg-zinc-100 backdrop-blur-lg z-30"
   >
     <a href="#home" class="font-logo font-semibold text-4xl">stust</a>
-    <ul class="flex gap-12 items-center">
+    <!-- <ul class="flex gap-12 items-center">
       <li class="hover:border-b-2 border-lgray">
         <a href="#aboutus">About us</a>
       </li>
@@ -20,6 +20,6 @@
       <li>
         <BaseButton type="flat">Get Started</BaseButton>
       </li>
-    </ul>
+    </ul> -->
   </nav>
 </template>

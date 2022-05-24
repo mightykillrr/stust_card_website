@@ -1,17 +1,17 @@
 <template>
   <div
-    class="flex flex-col gap-5 rounded-lg bg-dblue py-32 px-40 text-5xl leading-normal font-light text-white xl:px-28"
+    class="sm:text-lg sm:p-9 flex flex-col gap-5 rounded-lg bg-dblue leading-normal font-light text-white"
   >
     <span class="">
       "Among all boring, classic traditional debit cards, @stust were the best.
       Partnering with stust was
-      <span class="text-llgray">the <u>best</u> choice ever!</span>
+      <span class="text-llgray">the <u>best</u> choice ever!</span>"
     </span>
-    <div class="flex items-center gap-5">
-      <hr class="w-12" />
+    <div class="sm:gap-3 flex items-center gap-5">
+      <hr class="sm:w-5 w-12" />
       <div class="flex flex-col">
-        <span class="text-xl">Nicolle R. Johnston</span>
-        <span class="text-sm text-llgray">Owner, DMTB Bank</span>
+        <span class="sm:text-sm text-xl">Nicolle R. Johnston</span>
+        <span class="sm:text-xs text-sm text-llgray">Owner, DMTB Bank</span>
       </div>
     </div>
     <a id="pricing" />
