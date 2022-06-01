@@ -1,29 +1,20 @@
-# stust
 
-This template should help get you started developing with Vue 3 in Vite.
+# Stust - Be Cashless in Style
+Stust is a fictional card-designers' company, who make beautiful, minimalistic, and high quality debit and credit cards for industries such as banks to buy.
 
-## Recommended IDE Setup
+## Demo
+Check it out: https://stust.vercel.app
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+### About this Project
+I made this project as a practice for my newly learnt skills of Vue and Tailwind CSS.
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Technologies Used
+- Vue.js
+- Tailwind CSS
 
-## Project Setup
+## Screenshots
 
-```sh
-npm install
-```
+![Hero](https://github.com/mightykillrr/stust_card_website/blob/main/git-f/ss.png?raw=true)
+![Later Sections](https://github.com/mightykillrr/stust_card_website/blob/main/git-f/ss-1.png?raw=true)
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
